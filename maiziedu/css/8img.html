@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 图片</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+
+  </head>
+  <body>
+    <div class="container">
+        <!-- 普通的图片样式 -->
+        <img src="../tupian/02.jpg" />
+        <br>
+        <!-- 响应式布局的图片 实质:max-width: 100%;  height: auto; IE10不兼容-->
+        <img src="../tupian/02.jpg" class="img-responsive" />
+
+        <br>
+        <!-- 图片形状 -->
+        <div class="row">
+            <!-- img-rounded 圆角图 -->
+            <div class="col-xs-4">
+                <img src="../tupian/01.jpg" class="img-rounded" />
+            </div>
+            <!-- img-circle 圆形 -->
+            <div class="col-xs-4">
+                <img src="../tupian/01.jpg" class="img-circle" />
+            </div>
+            <!-- img_humbnail 带一点空边的图形-->
+            <div class="col-xs-4">
+                <img src="../tupian/01.jpg" class="img-thumbnail" />
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
