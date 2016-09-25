@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 焦点状态</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+  </head>
+
+  <body>
+    <!-- 加载自动获得焦点状态 -->
+      <div class="container">
+          <form action="#" method="post" class="form-horizontal">
+            <div class="form-control">
+                <label>tel</label>
+                <input type="tel" placeholder="输入手机号码"/>
+            </div>
+            <div class="form-control">
+                <label>email</label>
+                <input type="email" autofocus placeholder="输入邮箱"/>
+            </div>
+          </form>
+      </div>
+
+     <hr>
+     <!-- 禁用状态 -->
+       <div class="container">
+           <form action="#" method="post" class="form-horizontal">
+             <div class="form-control">
+                 <label>tel</label>
+                 <input type="tel" disabled placeholder="输入手机号码"/>
+             </div>
+             <div class="form-control">
+                 <label>email</label>
+                 <input type="email" autofocus placeholder="输入邮箱"/>
+             </div>
+           </form>
+       </div>
+
+       <hr>
+        <!-- fieldset 整组禁用 -->
+            <div class="container">
+             <form action="#" method="post" class="form-horizontal">
+                <fieldset disabled >
+                   <div class="form-control">
+                       <label>tel</label>
+                       <input type="tel" placeholder="输入手机号码"/>
+                   </div>
+                   <div class="form-control">
+                       <label>email</label>
+                       <input type="email" autofocus placeholder="输入邮箱"/>
+                   </div>
+               </fieldset>
+             </form>
+         </div>
+
+        <hr>
+        <!-- 只读状态 -->
+        <div class="container">
+               <form action="#" method="post" class="form-horizontal">
+                 <div class="form-control">
+                     <label>tel</label>
+                     <input type="tel" placeholder="输入手机号码" readonly/>
+                 </div>
+               </form>
+           </div>
+
+        <hr>
+        <!-- 只读状态 -->
+        <div class="container">
+                  <form action="#" method="post" class="form-horizontal">
+                    <div class="form-control">
+                        <label>tel</label>
+                        <input type="tel" placeholder="输入手机号码" readonly/>
+                    </div>
+                  </form>
+              </div>
+
+        <hr>
+       <!-- 校验状态 不知道有毛用
+        Bootstrap 对表单控件的校验状态，如 error、warning 和 success 状态，
+        都定义了样式。使用时，添加 .has-warning、.has-error 或 .has-success 类到这些控件的父元素即可
+        任何包含在此元素之内的 .control-label、.form-control 和 .help-block 元素都将接受这些校验状态的样式。-->
+
+        <div class="container">
+            <form action="#" method="post" class="form-horizontal">
+                <div class="form-group has-success">
+                    <label class="control-label" for="inputSuccess1">Input with success</label>
+                    <input type="text" class="form-control" id="inputSuccess1">
+                </div>
+                <div class="form-group has-warning">
+                    <label class="control-label" for="inputWarning1">Input with warning</label>
+                    <input type="text" class="form-control" id="inputWarning1">
+                </div>
+                <div class="form-group has-error">
+                    <label class="control-label" for="inputError1">Input with error</label>
+                    <input type="text" class="form-control" id="inputError1">
+                </div>
+            </form>
+       </div>
+
+      <hr>
+       <!-- 为校验状态 添加小图标 添加feedback  控件后加span标签
+        form-control-feedback 是必加的  glyphicon  glyphicon-ok 是Ok的图标，
+        更多图标在 http://v3.bootcss.com/components/-->
+        <div class="container">
+            <form action="#" method="post" class="form-horizontal">
+               <div class="form-group has-success has-feedback">
+                 <label class="control-label" for="inputSuccess2">Input with success</label>
+                 <input type="text" class="form-control" id="inputSuccess2">
+                 <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+               </div>
+           </form>
+       </div>
+
+  </body>
+</html>

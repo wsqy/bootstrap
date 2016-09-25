@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 表单</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+  </head>
+  <body>
+      <!-- 这是html的表单样式 -->
+      <div class="container">
+          <form action="#" method="post">
+              <div>
+                  <label for="exampleInputUsername">用户名:</label>
+                  <input type="text" id="exampleInputUsername" placeholder="用户名">
+              </div>
+              <div>
+                  <label for="exampleInputPasswd">密码:</label>
+                  <input type="password" id="exampleInputPasswd" placeholder="密码">
+              </div>
+          </form>
+      </div>
+      <hr>
+      <!-- 把label和需要的控件添加类 form-group(上下边距微调了) 可以获得更好的体验 -->
+      <div class="container">
+          <form action="#" method="post">
+              <div class="form-group">
+                  <label for="exampleInputUsername">用户名:</label>
+                  <input type="text" id="exampleInputUsername" placeholder="用户名">
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputPasswd">密码:</label>
+                  <input type="password" id="exampleInputPasswd" placeholder="密码">
+              </div>
+          </form>
+      </div>
+      <hr>
+      <!-- form-control可以用来将 input textarea select宽度设置100% -->
+      <div class="container">
+          <form action="#" method="post">
+              <div class="form-group">
+                  <label for="exampleInputUsername">用户名:</label>
+                  <input class="form-control" type="text" id="exampleInputUsername" placeholder="用户名">
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputPasswd">密码:</label>
+                  <input class="form-control"type="password" id="exampleInputPasswd" placeholder="密码">
+              </div>
+          </form>
+      </div>
+      <hr>
+      <!-- form-inline 内联表单  排成一行 此类必须结合label使用,如果不想看到文字可以设置sr-only来隐藏-->
+      <div class="container">
+          <form action="#" method="post" class="form-inline">
+              <div class="form-group">
+                  <label for="exampleInputUsername">用户名:</label>
+                  <input class="form-control" type="text" id="exampleInputUsername" placeholder="用户名">
+              </div>
+              <div class="form-group">
+                  <label class="sr-only" for="exampleInputPasswd">密码:</label>
+                  <input class="form-control"type="password" id="exampleInputPasswd" placeholder="密码">
+              </div>
+          </form>
+      </div>
+      <hr>
+      <!-- form-horizontal结合栅格类可以将 label和控件并行,只在中等及以上大小屏幕适用-->
+      <div class="container">
+          <form action="#" method="post" class="form-horizontal">
+              <div class="form-group">
+                  <label class="col-sm-2 control-label" for="exampleInputUsername">用户名:</label>
+                  <div class="col-sm-10">
+                      <input class="form-control" type="text" id="exampleInputUsername" placeholder="用户名">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label class="col-sm-2 control-label" for="exampleInputPasswd">密码:</label>
+                  <div class="col-sm-10">
+                      <input class="form-control" type="password" id="exampleInputPasswd" placeholder="密码">
+                  </div>
+              </div>
+          </form>
+      </div>
+      <hr>
+
+  </body>
+</html>

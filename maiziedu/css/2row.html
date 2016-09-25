@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 栅格系统</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <style type="text/css">
+        div{border:1px #cccccc solid;}
+    </style>
+
+  </head>
+  <body>
+      <div class="container">
+          <!-- 一行排列 小分辨率下的样式在大分辨率下同样生效，反之，则变为单独一行-->
+          <!-- 中等分辨率下 PC >=992px-->
+          <div class="row">
+              <div class="col-md-8">col-md-8</div>
+              <div class="col-md-4">col-md-4</div>
+          </div>
+          <!-- 小等分辨率下 平板>=768-->
+          <div class="row">
+              <div class="col-sm-6">col-sm-6</div>
+              <div class="col-sm-6">col-sm-6</div>
+          </div>
+          <!-- 超小等分辨率下 手机<768-->
+          <div class="row">
+              <div class="col-xs-3">col-xs-3</div>
+              <div class="col-xs-3">col-xs-3</div>
+              <div class="col-xs-3">col-xs-3</div>
+              <div class="col-xs-3">col-xs-3</div>
+          </div>
+        <hr>
+        <!-- 列组合   由于大分辨率下的样式在小分辨率下会乱 所以可以组合定义 -->
+        <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-3">col</div>
+            <div class="col-md-4 col-sm-6 col-xs-3">col</div>
+        </div>
+        <!-- 这种定义就是在pc下8/4 平板上6/6  手机上3/3 -->
+
+        <hr>
+        <!-- 列嵌套  列分割完的小列里还可以分成12等分 -->
+        <div class="row">
+            <div class="col-md-8 ">
+                <div class="col-md-1">1</div>
+                <div class="col-md-1">1</div>
+                <div class="col-md-1">1</div>
+                <div class="col-md-1">1</div>
+                <div class="col-md-1">1</div>
+                <div class="col-md-1">1</div>
+                <div class="col-md-1">1</div>
+                <div class="col-md-1">1</div>
+                <div class="col-md-1">1</div>
+                <div class="col-md-1">1</div>
+                <div class="col-md-1">1</div>
+                <div class="col-md-1">1</div>
+            </div>
+            <div class="col-md-4 ">col-md-4</div>
+        </div>
+        <hr>
+
+        <!-- 列偏移 指定列偏移几个格子 注意在这列后面的列也会被此偏移影响-->
+        <div class="row">
+          <div class="col-md-3 col-md-offset-3">col-md-3</div>
+          <div class="col-md-3 col-md-offset-2">col-md-3</div>
+        </div>
+        <hr>
+
+        <!-- 列排序 通过使用 .col-md-push-* 和 .col-md-pull-* 类
+        来改变列的顺序,在此后面的列不被影响但是可能会被覆盖-->
+        <div class="row">
+          <div class="col-md-3 col-md-push-6">col-md-3</div>
+          <div class="col-md-3 col-md-pull-3">col-md-3</div>
+        </div>
+        <hr>
+
+        <!-- 超过12格会自动在下面再加一行 填充剩余的部分 -->
+        <div class="row">
+          <div class="col-md-6 col-sm-3">col-md-6</div>
+          <div class="col-md-6 col-sm-3">col-md-6</div>
+          <div class="col-md-6 col-sm-3">col-md-6</div>
+          <div class="col-md-6 col-sm-3">col-md-6</div>
+        </div>
+        <hr>
+
+      </div>
+
+  </body>
+</html>

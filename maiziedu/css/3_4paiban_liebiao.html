@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 列表</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <style type="text/css">
+        div{background: #cccccc}
+    </style>
+
+  </head>
+  <body>
+    <!-- bootcss.com中全局样式中的列表部分 -->
+      <div class="container">
+          <!-- 无序列表 -->
+          <ul>
+              <li>第一列</li>
+              <li>第二列</li>
+              <li>第三列</li>
+              <li>第四列</li>
+          </ul>
+      </div>
+      <hr>
+      <div class="container">
+          <!-- 有序列表 -->
+          <ol>
+              <li>第一列</li>
+              <li>第二列</li>
+              <li>第三列</li>
+              <li>第四列</li>
+          </ol>
+      </div>
+    <hr>
+      <div class="container">
+          <!-- 去掉列表前的排序 -->
+          <ol class="list-unstyled">
+              <li>第一列</li>
+              <li>第二列</li>
+              <li>第三列</li>
+              <li>第四列</li>
+          </ol>
+      </div>
+      <hr>
+        <div class="container">
+            <!-- 去掉列表前的排序并且在一行显示 -->
+            <ol class="list-inline">
+                <li>第一列</li>
+                <li>第二列</li>
+                <li>第三列</li>
+                <li>第四列</li>
+            </ol>
+        </div>
+     <hr>
+        <div class="container">
+          <!-- 带有描述短语的列表 -->
+          <dl class="">
+              <dt>python</dt>
+              <dd>Python是一门很流行的语言</dd>
+              <dt>javascript</dt>
+              <dd>javascript是一门很流行的语言</dd>
+              <dt>JAVA</dt>
+              <dd>JAVA是一门很流行的语言</dd>
+          </dl>
+      </div>
+
+      <hr>
+         <div class="container">
+           <!-- 上面的列表可以写成 dd对dt的描述 -->
+           <dl class="dl-horizontal">
+               <dt>python</dt>
+               <dd>Python是一门很流行的语言</dd>
+               <dt>javascript</dt>
+               <dd>javascript是一门很流行的语言</dd>
+               <dt>JAVA</dt>
+               <dd>JAVA是一门很流行的语言</dd>
+           </dl>
+       </div>
+
+  </body>
+</html>

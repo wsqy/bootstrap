@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 代码样式</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+  </head>
+  <body>
+      <code>PHP</code> 是最好的语言.<br/>
+      选择好文件可以按快捷键<kbd>F2</kbd>来快速重命名.<br/>
+      <!-- 代码块 -->
+      <pre>
+  class Solution:
+      # s 源字符串
+      def replaceSpace(self, s):
+          return s.replace(" ", "%20")
+
+  if __name__ == "__main__":
+      s = Solution()
+      str = "We Are Happy"
+      print(s.replaceSpace(str))
+      </pre>
+      其中 <var>str</var>和<var>target</var>是变量<br>
+      程序的结果为:<samp>We%20Are%20Happy</samp>
+
+  </body>
+</html>

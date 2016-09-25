@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 按钮</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+
+  </head>
+  <body>
+    <!-- 预定义样式 -->
+    <div class="container">
+        <!-- 默认 button -->
+        <button type="button" class="btn btn-default">Default</button>
+
+        <!--  首选项  -->
+        <button type="button" class="btn btn-primary">Primary</button>
+
+        <!--  successful  -->
+        <button type="button" class="btn btn-success">Success</button>
+
+        <!-- 一般信息 -->
+        <button type="button" class="btn btn-info">Info</button>
+
+        <!-- 警告 -->
+        <button type="button" class="btn btn-warning">Warning</button>
+
+        <!-- 危险 -->
+        <button type="button" class="btn btn-danger">Danger</button>
+
+        <!-- 链接 (去掉按钮框框 但是保留action) -->
+        <button type="button" class="btn btn-link">Link</button>
+
+    </div>
+
+    <br>
+    <!-- 更改按钮尺寸  使用 .btn-lg、.btn-sm 或 .btn-xs 可以获得不同尺寸的按钮 -->
+    <div class="container">
+      <p>
+        <button type="button" class="btn btn-primary btn-lg">大按钮</button>
+        <button type="button" class="btn btn-default btn-lg">大按钮</button>
+      </p>
+      <p>
+        <button type="button" class="btn btn-primary">正常大小的按钮</button>
+        <button type="button" class="btn btn-default">正常大小的按钮</button>
+      </p>
+      <p>
+        <button type="button" class="btn btn-primary btn-sm">小按钮</button>
+        <button type="button" class="btn btn-default btn-sm">小按钮</button>
+      </p>
+      <p>
+        <button type="button" class="btn btn-primary btn-xs">超小按钮</button>
+        <button type="button" class="btn btn-default btn-xs">超小按钮</button>
+      </p>
+    </div>
+
+    <br>
+    <!-- 按钮类 多标签的支持  -->
+    <div class="container">
+        <a class="btn btn-default" href="http://www.baidu.com" role="button">Link</a>
+        <button class="btn btn-default" type="submit">Button</button>
+        <input class="btn btn-default" type="button" value="Input">
+        <input class="btn btn-default" type="submit" value="Submit">
+
+    </div>
+
+    <br>
+    <!-- 激活状态 ==被按下的状态 -->
+    <div class="container">
+        <button class="btn btn-default" type="submit">正常状态</button>
+        <button class="btn btn-default active" type="submit">激活状态</button>
+    </div>
+
+    <br>
+    <!-- 禁用状态 == 被按下的状态，(透明度变为65%)  -->
+    <div class="container">
+        <button class="btn btn-default" type="submit">正常状态</button>
+        <button class="btn btn-default disabled" type="submit">禁止状态</button>
+        <!-- 正常是可以禁止跳转的   但是低版本不兼容 链接还是不要搞成按钮比较好-->
+        <a class="btn btn-default disabled" href="http://www.baidu.com" role="button">禁止链接状态</a>
+
+    </div>
+
+  </body>
+</html>

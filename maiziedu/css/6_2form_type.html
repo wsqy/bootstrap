@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 介绍被支持的控件</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+  </head>
+
+  <body>
+      <!-- 都可以设置disabled 则鼠标悬停时显示禁止选中的图标(还是可以选的,文本框则禁止输入了)
+      checkbox radio 都有 *-inline(内联) 但是内联不能缺省 label -->
+      <div class="container">
+          <form action="#" method="post" class="form-horizontal">
+              <!-- 多行文本域 通过rows指定默认的、最少的行数 -->
+              <div class="form-group">
+                  <label class="col-sm-2 control-label" for="exampleInputUsername">个人简介</label>
+                  <div class="col-sm-10">
+                      <textarea class="form-control" rows="2" id="exampleInputUsername" placeholder="个人简介"></textarea>
+                  </div>
+              </div>
+
+            <hr>
+            <!-- 单选按钮 需要设置好name 一组才能只选一个-->
+            <div class="radio">
+              <label><input type="radio" name="sex" value="man" />男</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="sex" value="women" />女</label>
+            </div>
+            <div class="radio disabled">
+              <label><input type="radio" name="sex" value="other" />other</label>
+            </div>
+
+            <hr>
+            <!-- 多选框 -->
+            <div class="checkbox">
+              <label><input type="checkbox" value="">python</label>
+            </div>
+            <div class="checkbox disabled">
+              <label><input type="checkbox" value="">bootstrap</label>
+            </div>
+            <div class="checkbox disabled">
+              <label><input type="checkbox" value="">javascript</label>
+            </div>
+
+            <hr>
+            <!-- 下拉列表 添加multiple属性可以选中多个-->
+            <select class="form-control" >
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+
+            <hr>
+            <!-- 下拉列表 添加multiple属性可以选中多个-->
+            <select class="form-control" >
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+
+            <hr>
+            <!-- 静态控件 -->
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="exampleInputUsername">用户名</label>
+                <div class="col-sm-10">
+                    <p class="form-control-static">wsqy</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="exampleInputPasswd">密码</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="password" id="exampleInputPasswd" placeholder="密码">
+                </div>
+            </div>
+
+
+
+          </form>
+      </div>
+  </body>
+</html>

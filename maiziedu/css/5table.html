@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 表格</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+  </head>
+  <body>
+      <!-- 默认的表格没有样式 -->
+      <div class="container">
+          <table>
+            <tr>
+                <th>ID</th><th>姓名</th><th>年龄</th>
+            </tr>
+            <tr>
+                <td>1</td><td>张三</td><td>20</td>
+            </tr>
+            <tr>
+                <td>2</td><td>李四</td><td>16</td>
+            </tr>
+            <tr>
+                <td>3</td><td>王五</td><td>21</td>
+            </tr>
+          </table>
+      </div>
+      <hr>
+      <!-- table类默认填充整个container,并且行间加了一个分割线-->
+      <div class="container">
+          <table class="table">
+            <tr>
+                <th>ID</th><th>姓名</th><th>年龄</th>
+            </tr>
+            <tr>
+                <td>1</td><td>张三</td><td>20</td>
+            </tr>
+            <tr>
+                <td>2</td><td>李四</td><td>16</td>
+            </tr>
+            <tr>
+                <td>3</td><td>王五</td><td>21</td>
+            </tr>
+          </table>
+      </div>
+      <hr>
+      <!-- table-striped 可以加一个斑马条纹-->
+      <div class="container">
+          <table class="table table-striped">
+            <tr>
+                <th>ID</th><th>姓名</th><th>年龄</th>
+            </tr>
+            <tr>
+                <td>1</td><td>张三</td><td>20</td>
+            </tr>
+            <tr>
+                <td>2</td><td>李四</td><td>16</td>
+            </tr>
+            <tr>
+                <td>3</td><td>王五</td><td>21</td>
+            </tr>
+          </table>
+      </div>
+      <hr>
+      <!-- 带边框的表格(可以结合table-striped 一起使用)-->
+      <div class="container">
+          <table class="table table-bordered">
+            <tr>
+                <th>ID</th><th>姓名</th><th>年龄</th>
+            </tr>
+            <tr>
+                <td>1</td><td>张三</td><td>20</td>
+            </tr>
+            <tr>
+                <td>2</td><td>李四</td><td>16</td>
+            </tr>
+            <tr>
+                <td>3</td><td>王五</td><td>21</td>
+            </tr>
+          </table>
+      </div>
+      <hr>
+      <!-- 鼠标悬停 样式(默认被悬停的行会变灰色)-->
+      <div class="container">
+          <table class="table table-hover">
+            <tr>
+                <th>ID</th><th>姓名</th><th>年龄</th>
+            </tr>
+            <tr>
+                <td>1</td><td>张三</td><td>20</td>
+            </tr>
+            <tr>
+                <td>2</td><td>李四</td><td>16</td>
+            </tr>
+            <tr>
+                <td>3</td><td>王五</td><td>21</td>
+            </tr>
+          </table>
+      </div>
+      <hr>
+      <!-- 紧缩表格 单元格中的内补均会减半(padding:5px),离每行每列的边框距离变窄了-->
+      <div class="container">
+          <table class="table table-condensed table-bordered ">
+            <tr>
+                <th>ID</th><th>姓名</th><th>年龄</th>
+            </tr>
+            <tr>
+                <td>1</td><td>张三</td><td>20</td>
+            </tr>
+            <tr>
+                <td>2</td><td>李四</td><td>16</td>
+            </tr>
+            <tr>
+                <td>3</td><td>王五</td><td>21</td>
+            </tr>
+          </table>
+      </div>
+      <hr>
+      <!-- 给表格添加状态类(可以给行或者单元格设置颜色)-->
+      <div class="container">
+          <table class="table table-bordered ">
+            <tr class="active">
+                <th>ID</th><th>姓名</th><th>年龄</th>
+            </tr>
+            <tr class="success">
+                <td>1</td><td>张三</td><td>20</td>
+            </tr>
+            <tr class="info">
+                <td>2</td><td>李四</td><td>16</td>
+            </tr>
+            <tr class="warning">
+                <td>3</td><td>王五</td><td>21</td>
+            </tr>
+            <tr class="danger">
+                <td>4</td><td>赵四</td><td>41</td>
+            </tr>
+          </table>
+      </div>
+      <hr>
+      <!-- 响应式表格 在小屏幕设备上水平, 否则滚动水平滚动条消失-->
+      <div class="table-responsive">
+          <table class="table table-bordered ">
+            <tr>
+                <th>ID</th><th>姓名</th><th>年龄</th><th>ID</th><th>姓名</th><th>年龄</th><th>ID</th><th>姓名</th><th>年龄</th>
+            </tr>
+            <tr>
+                <td>1</td><td>张三</td><td>20</td><td>1</td><td>张三</td><td>20</td><td>1</td><td>张三</td><td>20</td>
+            </tr>
+            <tr>
+                <td>2</td><td>李四</td><td>16</td><td>2</td><td>李四</td><td>16</td><td>2</td><td>李四</td><td>16</td>
+            </tr>
+            <tr>
+                <td>3</td><td>王五</td><td>21</td><td>3</td><td>王五</td><td>21</td><td>3</td><td>王五</td><td>21</td>
+            </tr>
+          </table>
+      </div>
+      <hr>
+  </body>
+</html>
